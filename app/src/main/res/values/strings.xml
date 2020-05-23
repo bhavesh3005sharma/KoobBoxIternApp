@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="sort">Sort</string>
+    <string name="sort_menu_title">Sort</string>
+    <string name="name">Title</string>
+    <string name="date">Date</string>
+    <string name="ascending">Ascending</string>
+    <string name="filter_menu_title">FILTER</string>
+    <string name="no_filter">No Filter</string>
+    <string name="type">Type</string>
+    <string name="animal">Animal</string>
+    <string name="bird">Bird</string>
+    <string name="priority">Priority</string>
+    <string name="app_name">Koob Box</string>
+</resources>

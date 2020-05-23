@@ -1,0 +1,75 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/filter_menu"
+        android:title="@string/filter_menu_title"
+        app:showAsAction="ifRoom">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".MainActivity">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/no_filter"
+                    android:checked="true"
+                    android:title="@string/no_filter"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/data_filter"
+                    android:title="@string/date"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/type_filter"
+                    android:title="@string/type"
+                    app:showAsAction="never">
+
+                    <menu>
+                        <group
+                            android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/animal_filter"
+                            android:title="@string/animal"
+                            app:showAsAction="never" />
+                        <item
+                            android:id="@+id/bird_filter"
+                            android:title="@string/bird"
+                            app:showAsAction="never" />
+                        </group>
+                    </menu>
+                </item>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/sort_action"
+        android:title="@string/sort_menu_title"
+        app:showAsAction="ifRoom">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".MainActivity">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/title_sort_mode"
+                    android:title="@string/name"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/date_sort_mode"
+                    android:checked="true"
+                    android:title="@string/date"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/priority_sort_mode"
+                    android:title="@string/priority"
+                    app:showAsAction="never" />
+            </group>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/ascending_sort_order"
+                    android:title="@string/ascending"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+</menu>
